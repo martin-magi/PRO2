@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
-	cout << "ahoj chabr\n";
+	cout << "Martin Magvasi\n";
+	cout << "Ahoj svet\n";
 }
 
