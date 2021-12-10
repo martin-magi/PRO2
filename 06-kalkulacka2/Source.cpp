@@ -5,12 +5,14 @@ int main()
 {
     char operacia;
     float cislo1, cislo2;
+    string rozho;
 
-    cout << "Zadaj priklad napr. 10 + 5" << endl;
-    cin >> cislo1 >> operacia >> cislo2;
+    do {
+        cout << "Zadaj priklad napr. 10 + 5" << endl;
+        cin >> cislo1 >> operacia >> cislo2;
 
-    switch (operacia)
-    {
+        switch (operacia)
+        {
         case '+':
             cout << cislo1 << " + " << cislo2 << " = " << cislo1 + cislo2;
             break;
@@ -30,7 +32,14 @@ int main()
         default:
             cout << "Zly operator!!!";
             break;
-    }
+        }
+
+        cout << "Chces pokracovat? (ano/nie) " << endl;
+        cin >> rozho;
+    } while (rozho == "ano");
+
+    
+
 
     return 0;
 }
